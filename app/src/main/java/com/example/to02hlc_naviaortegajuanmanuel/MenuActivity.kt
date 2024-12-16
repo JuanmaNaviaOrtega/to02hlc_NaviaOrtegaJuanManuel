@@ -12,10 +12,10 @@ class MenuActivity: AppCompatActivity() {
         setContentView(R.layout.activity_menu)
         val btnPrimeraApp= findViewById<Button>(R.id.btnprimeraApp)
         val btnSegundaApp= findViewById<Button>(R.id.btnsegundaApp)
-        //val btnTerceraApp= findViewById<Button>(R.id.btnterceraApp)
+        val btnTerceraApp= findViewById<Button>(R.id.btnterceraApp)
         btnPrimeraApp.setOnClickListener{navigateToprimeraApp()}
         btnSegundaApp.setOnClickListener{navigateSegundaApp()}
-       // btnTerceraApp.setOnClickListener{navigateTerceraApp()}
+        btnTerceraApp.setOnClickListener{navigateTerceraApp()}
 
     }
 
@@ -30,8 +30,8 @@ class MenuActivity: AppCompatActivity() {
         startActivity(intent)
     }
 
-    //private fun navigateTerceraApp(){
-      //  val intent = Intent(this, MainActivity3::class.java  )
-        //startActivity(intent)
-    //}
+    private fun navigateTerceraApp(){
+      val intent = Intent(this, MainActivity3::class.java  )
+        startActivity(intent)
+    }
 }
